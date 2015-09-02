@@ -2,9 +2,11 @@
 
 # DistractMe
 # A simple distraction script to send random links 
-# Version 1.0
+# Version 1.01
 # Author: farmboi
 
+use strict;
+use warnings;
 use Getopt::Long; #Option Support
 use WebService::HipChat; #Load the Hipchat Module
 
@@ -12,6 +14,9 @@ my $reddit = 0;
 my $imgur = 0;
 
 my $username = 0;
+
+my $url = 0; 
+my $user = 0; 
 
 $ENV{'PERL_LWP_SSL_VERIFY_HOSTNAME'} = 0;
 
